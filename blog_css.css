@@ -1,0 +1,86 @@
+@import url("buttons_css.css");
+@import url("footer_css.css");
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "hd"
+    "ap" 
+    "vg"
+    "ch"
+    "ft";
+    width: auto;
+    height: auto;
+    grid-gap: auto;
+}
+@media(min-width:1200px){
+.container{
+    display: grid;
+    grid-template-columns: auto 30% auto 30% auto 30% auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd"
+    ". ap . vg . ch ."
+    "ft ft ft ft ft ft ft";
+    width: auto;
+    height: auto;
+    grid-gap: 20px;
+}
+#apple, #veggies, #cheez{ 
+    background-size: cover;
+    width: 300px; 
+    height: 300px; 
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2rem;
+}
+.mix{
+    border: solid 2px;
+    padding: 40px;
+    width: 300px;
+}
+}
+.title{
+    grid-area: hd;
+    font-size: 3em;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#apple, #veggies, #cheez{ 
+    background-size: cover;
+    width: 100%; 
+    height: 300px; 
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2rem;
+}
+.mix{
+    border: solid 2px;
+    padding: 40px;
+    width: 70%;
+}
+#apple{ 
+    background-image: url("images/apple.png");
+}
+.b1{
+    grid-area: ap;
+    justify-self: center;
+}
+#veggies{
+    background-image: url("images/veggies.png");
+}
+.b2{
+    grid-area: vg;
+    justify-self: center;
+}
+#cheez{
+    background-image: url("images/cheez-its\ background.jpg");
+}
+.b3{
+    grid-area: ch;
+    justify-self: center;
+}
+.lorem{
+    text-align: center;
+}

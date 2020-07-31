@@ -1,0 +1,74 @@
+@media(min-width:1200px){
+.holder{
+    display:grid;
+    grid-template-columns: 200px 50px 50px 50px 50px 50px;
+    grid-template-rows: 25px 220px auto auto;
+    grid-gap: 10px;
+    padding-left: 20%;
+    padding-top: 50px;
+    grid-template-areas:
+    "at at . fl fl fl"
+    "cd cd . bt1 bt2 bt3"
+    "cd cd . . . ."
+    "jb jb jb jb jb ."
+}
+}
+.bottom{
+    background-color: lightblue;
+    margin: 0;
+    margin-bottom: -15px;
+    padding-left: 20%;
+    padding-bottom: 50px;
+    grid-area: ft;
+ }
+
+ .outro{
+    grid-area: at;
+    font-weight: bold;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 240px;
+    border: solid 2px;
+    grid-area: cd;
+}
+.card > img{
+    width: 170px;
+    height: 220px;
+}
+.name{
+    margin: 0;
+}
+.job{
+    margin:0;
+    grid-area: jb;
+}
+.follow{
+    font-weight: bold;
+    grid-area: fl;
+}
+.social{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.social:hover{
+    cursor: pointer;
+}
+.social1{
+    background-image: url(images/twitter.png);
+    background-size: cover;
+    grid-area: bt1;
+}
+.social2{
+    background-image: url(images/facebook1.png);
+    background-size: cover;
+    grid-area: bt2;
+}
+.social3{
+    background-image: url(images/linkedin1.png);
+    background-size: cover;
+    grid-area: bt3;
+}

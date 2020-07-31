@@ -1,0 +1,77 @@
+@import url("buttons_css.css");
+@import url("footer_css.css");
+body{
+    background-image: url("images/cheez-its background.jpg");
+    background-color: coral;
+    margin: 0;
+}
+#cheez{
+    text-align: center;
+    font-family : serif; 
+}
+.title{
+    text-transform: uppercase;
+    font-size: 10em;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin:0;
+}
+.intro{
+    font-size: 2em;
+    background: lightseagreen;
+    border: solid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.try{
+    font-size: 1.3em;
+    font-style: italic;
+    background-color: grey;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#saying::before{
+    content: open-quote;
+}
+#saying::after {
+    content: close-quote;
+}
+#wife{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.best{
+    border: 10px solid;
+    border-color: red;
+    max-width: 400px;
+    min-width: 400px;
+    height: 520px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: orangered;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: lightgrey;
+}
+.caption{
+    font-weight: normal; 
+    font-size: 30px;
+} 
+.photo{
+    height: 70%;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+.photo2{
+    height: 70%;
+}
